@@ -1,0 +1,33 @@
+# この .gitignore は onsite-solutionlocal/app/public/wp-content/ にコピーして使う
+# 初回セットアップ時：
+#   cp ../../../../.gitignore-wp-content .gitignore
+#
+# Git管理対象：themes/ plugins/ mu-plugins/ languages/
+# 除外対象：uploads/ cache/ wflogs/ upgrade/ 自動生成キャッシュファイル
+
+uploads/
+cache/
+wflogs/
+upgrade/
+advanced-cache.php
+wp-cache-config.php
+object-cache.php
+db.php
+
+# 大容量・不要・テーマ独自キャッシュ
+**/node_modules/
+**/.DS_Store
+**/*.log
+**/Thumbs.db
+
+# WP Super Cache関連
+wp-super-cache/
+supercache/
+
+# Wordfence 内部データ（巨大）
+wordfence-waf.php
+.user.ini
+
+# プラグイン別の除外
+plugins/wordfence/tmp/
+plugins/wordfence/lib/*.map
