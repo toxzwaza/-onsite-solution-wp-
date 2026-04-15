@@ -2,6 +2,7 @@
 /**
  * Plugin Name: Onsite Solution - Portfolio CPT
  * Description: ポートフォリオ用カスタム投稿タイプ
+ * Version: 1.0.1
  */
 add_action('init', function () {
     register_post_type('portfolio', [
